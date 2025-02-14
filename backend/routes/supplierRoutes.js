@@ -1,10 +1,9 @@
-// Backend (Node.js + Express)
-// File: backend/routes/supplierRoutes.js
 const express = require('express');
 const router = express.Router();
-const { registerSupplier, getSupplierDetails } = require('../controllers/supplierController');
+const { registerSupplier, getSuppliers, getOptimalSupplier } = require('../controllers/supplierController');
 
 router.post('/', registerSupplier);
-router.get('/:id', getSupplierDetails);
+router.get('/', getSuppliers);
+router.get('/optimal', getOptimalSupplier);
 
 module.exports = router;

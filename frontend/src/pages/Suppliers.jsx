@@ -1,5 +1,3 @@
-// Frontend (React)
-// File: frontend/src/pages/Suppliers.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 

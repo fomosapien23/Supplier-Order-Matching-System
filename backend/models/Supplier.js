@@ -1,5 +1,3 @@
-// Backend (Node.js + Express)
-// File: backend/models/Supplier.js
 const mongoose = require('mongoose');
 
 const SupplierSchema = new mongoose.Schema({
@@ -10,6 +8,7 @@ const SupplierSchema = new mongoose.Schema({
     rating: { type: Number, default: 0 },
     products: [{
         productId: { type: Number, required: true },
+        productName: { type: String, required: true },
         price: { type: Number, required: true },
         stock: { type: Number, required: true },
         deliveryTime: { type: Number, required: true }
