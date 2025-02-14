@@ -10,7 +10,6 @@ exports.registerSupplier = async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 };
-
 exports.getSupplierDetails = async (req, res) => {
     try {
         const supplier = await Supplier.findById(req.params.id);

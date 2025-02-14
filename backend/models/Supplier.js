@@ -3,6 +3,8 @@
 const mongoose = require('mongoose');
 
 const SupplierSchema = new mongoose.Schema({
+    email:{type: String, required:true},
+    password:{type: String, required:true},
     name: { type: String, required: true },
     location: { type: String, required: true },
     rating: { type: Number, default: 0 },
